@@ -1,0 +1,6 @@
+{
+  "name": "GYFTS Rescue",
+  "description": "Fostering hope, fighting hunger, and strengthening communities in Irving, Texas through food distribution and support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
