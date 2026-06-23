@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, Heart, Shield, Award, Phone } from "lucide-react";
+// @ts-ignore
+import logoImg from "../assets/images/gyfts_rescue_logo_1782232521671.jpg";
 
 interface NavigationProps {
   currentTab: string;
@@ -36,10 +38,13 @@ export default function Navigation({ currentTab, setTab }: NavigationProps) {
               onClick={() => handleTabClick("home")}
               className="flex items-center gap-3.5 text-left group cursor-pointer animate-fade-in"
             >
-              <div className="h-10 w-10 bg-emerald-800 rounded-lg flex items-center justify-center text-white font-serif font-semibold text-lg shadow-sm transition-all group-hover:bg-emerald-950 group-hover:scale-102">
-                <div className="w-6 h-6 border-2 border-white rounded-full flex items-center justify-center">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-                </div>
+              <div className="h-12 w-12 rounded-full overflow-hidden border border-emerald-100/60 flex items-center justify-center bg-stone-50 shadow-xs transition-all group-hover:scale-105 group-hover:border-emerald-200">
+                <img 
+                  src={logoImg} 
+                  alt="GYFTS Rescue Logo" 
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight text-emerald-950 font-sans group-hover:text-emerald-700 transition-colors leading-none">
