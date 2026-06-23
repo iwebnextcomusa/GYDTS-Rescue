@@ -134,7 +134,7 @@ export default function Footer({ setTab }: FooterProps) {
         </div>
 
         {/* Developed by and Center-aligned Footer */}
-        <div className="mt-16 pt-8 border-t border-emerald-900/60 flex flex-col md:flex-row justify-between items-center gap-4 text-emerald-200/50 text-xs text-center md:text-left">
+        <div className="mt-16 pt-8 border-t border-emerald-900/60 flex flex-col items-center justify-center gap-4 text-emerald-200/50 text-xs text-center">
           <div>
             &copy; {new Date().getFullYear()} GYFTS Rescue (gyftsrescue.org). All rights reserved.
           </div>
